@@ -12,20 +12,41 @@
 </head>
 
 <body>
+<!--INÍCIO-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand">Classificação</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="visualizar.php">Ver Tabela de Classificação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="cadastro.html">Adicionar Equipe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="cadastro.html">Voltar para a pagina Principal</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
 <!--tabela fixa-->
 <div class="table-responsive" style="float:left;">
-  <table class="table table-dark table-striped">
+  <table class="table table-bordered table-dark">
     <thead>
       <tr>
       <th class="col">Posição</th>
       </tr>
     </thead>
     <tbody>
-      <tr><th scope="row">1</th></tr>
-      <tr><th scope="row">2</th></tr>
-      <tr><th scope="row">3</th></tr>
-      <tr><th scope="row">4</th></tr>
-      <tr><th scope="row">5</th></tr>
+      <tr><th class="bg-primary" scope="row">1</th></tr>
+      <tr><th class="bg-primary" scope="row">2</th></tr>
+      <tr><th class="bg-primary" scope="row">3</th></tr>
+      <tr><th class="bg-primary" scope="row">4</th></tr>
+      <tr><th class="bg-primary" scope="row">5</th></tr>
       <tr><th scope="row">6</th></tr>
       <tr><th scope="row">7</th></tr>
       <tr><th scope="row">8</th></tr>
@@ -36,9 +57,11 @@
     </tbody>
   </table>
 </div>
-<!--tabela-->
-  <div class="table-responsive" style="text-align: center;">
-  <table class="table table-dark table-striped">
+
+
+<!--tabela dinamica-->
+  <div class="table-responsive" class="container" style="text-align: center;">
+  <table class="table table-bordered table-dark">
     <thead>
       <tr>
       <th class="col">Equipe</th>
@@ -54,8 +77,6 @@
     </tbody>
   </table>
 </div>
-
-
 </table>
 
     <!--JAVA SCRIPT-->
