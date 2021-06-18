@@ -1,9 +1,8 @@
 <?php
 
-$nome_aluno = $_POST['nome'];
-$disc = $_POST['disciplina'];
-$nota1 = $_POST['n1'];
-$nota2 = $_POST['n2'];
+$nome = $_POST['nome'];
+$pontos = $_POST['p'];
+$abates = $_POST['a'];
 
 //$servername = "sql111.epizy.com";
 //$username = "epiz_28780994";
@@ -13,14 +12,14 @@ $nota2 = $_POST['n2'];
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "cadastro_alunos";
+$dbname = "classificacao";
 
 try {
   $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
   
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-  $sql = "INSERT INTO alunos(aluno, disciplina, n1, n2)
-  VALUES ('$nome_aluno', '$disc', '$nota1', '$nota2')";
+  $sql = "INSERT INTO equipes(equipes, pontos, abates)
+  VALUES ('$nome', '$pontos', '$abates')";
 
   $conn->exec($sql);
   header("location: visualizar.php");

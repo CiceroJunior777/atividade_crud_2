@@ -5,7 +5,7 @@ $id = $_GET['id'];
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "cadastro_alunos";
+$dbname = "classificacao";
 
 try {
   $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
@@ -13,7 +13,7 @@ try {
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
   // sql to delete a record
-  $sql = "DELETE FROM alunos WHERE id=$id";
+  $sql = "DELETE FROM equipes WHERE id=$id";
 
   // use exec() because no results are returned
   $conn->exec($sql);

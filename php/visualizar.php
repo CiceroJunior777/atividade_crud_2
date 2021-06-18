@@ -7,26 +7,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="css/estilo.css" rel="stylesheet">
 
 </head>
 
 <body>
-
+<!--tabela fixa-->
+<div class="table-responsive" style="float:left;">
+  <table class="table table-dark table-striped">
+    <thead>
+      <tr>
+      <th class="col">Posição</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><th scope="row">1</th></tr>
+      <tr><th scope="row">2</th></tr>
+      <tr><th scope="row">3</th></tr>
+      <tr><th scope="row">4</th></tr>
+      <tr><th scope="row">5</th></tr>
+      <tr><th scope="row">6</th></tr>
+      <tr><th scope="row">7</th></tr>
+      <tr><th scope="row">8</th></tr>
+      <tr><th scope="row">9</th></tr>
+      <tr><th scope="row">10</th></tr>
+      <tr><th scope="row">11</th></tr>
+      <tr><th scope="row">12</th></tr>
+    </tbody>
+  </table>
+</div>
 <!--tabela-->
-<table class="table table-bordered">
-  <thead>
-    <tr>
-      <th scope="col">Aluno</th>
-      <th scope="col">Id</th>
-      <th scope="col">Disciplina</th>
-      <th scope="col">Nota 01</th>
-      <th scope="col">Nota 02</th>
-      <th scope="col">Deletar</th>
-    </tr>
-  </thead>
-  <tbody>
-  <?php include 'banco.php';?> 
-  </tbody>
+  <div class="table-responsive" style="text-align: center;">
+  <table class="table table-dark table-striped">
+    <thead>
+      <tr>
+      <th class="col">Equipe</th>
+      <th class="col">Pontos</th>
+      <th class="col">Abates</th>
+      <th class="col">Deletar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr scope="row">
+      <?php include 'banco.php';?> 
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
 </table>
 
     <!--JAVA SCRIPT-->

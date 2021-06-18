@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <script src="js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <link href="css/estilo.css" rel="stylesheet">
 </head>
 
 <body>
@@ -15,17 +15,17 @@
     <!--INÍCIO-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand">Cadastrar Novo Usuário</a>
+            <a class="navbar-brand">Adicionar Time</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="php/visualizar.php">Ver cadastrados</a>
+                        <a class="nav-link active" aria-current="page" href="php/visualizar.php">Ver Classificação</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Ínicio</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Voltar Para a Página Inicial</a>
                     </li>
                 </ul>
                 <form class="d-flex">
@@ -40,29 +40,25 @@
 
 
     <!--Formulário-->
-    <form id="formulario" class="row g-3 needs-validation" action="php/cadastrar.php" method="post">
+    <form id="formulario" class="row g-3 needs-validation" action="php/adicionar.php" method="post">
         <div class="col-6">
-            <label for="nome" class="form-label">Nome do Aluno</label>
-            <input type="name" class="form-control" name="nome" id="nome" placeholder="Insira o nome do aluno" required>
+            <label for="nome" class="form-label">Nome da Equipe</label>
+            <input type="name" class="form-control" name="nome" id="nome" placeholder="Insira o nome do Time" required>
         </div>
         <div class="col-6">
-            <label for="disciplina" class="form-label">Disciplina</label>
-            <input type="name" class="form-control" name="disciplina" id="disciplina" placeholder="Digite a Disciplina" required>
+            <label for="p" class="form-label">Pontos</label>
+            <input type="int" class="form-control" max="3" value="0" name="p" id="p" required>
         </div>
-        <div class="col-6">
-            <label for="n1" class="form-label">Nota 01</label>
-            <input type="int" class="form-control" max="3" name="n1" id="n1" placeholder="Digite a Nota 01" required>
+        <div class="col-6 ">
+            <label for="a" class="form-label ">Abates</label>
+            <input type="int" class="form-control" value="0" max="3" name="a" id="a" required>
         </div>
-        <div class="col-6">
-            <label for="n2" class="form-label">Nota 02</label>
-            <input type="int" class="form-control" max="3" name="n2" id="n2" placeholder="Digite a Nota 02" required>
-        </div>
-        <button type="submit" class="btn btn-primary">Finalizar Cadastro</button>
+        <button type="submit" class="btn btn-primary">Adicionar</button>
     </form>
 
     <!--JAVA SCRIPT-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
+    <script src="js/bootstrap.min.js "></script>
 </body>
 
 </html>
