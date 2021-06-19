@@ -13,21 +13,10 @@
 
 <body>
 <!--INÍCIO-->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-dark bg-primary">
         <div class="container-fluid">
             <a class="navbar-brand">Classificação</a>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="visualizar.php">Ver Tabela de Classificação</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="cadastro.html">Adicionar Equipe</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="cadastro.html">Voltar para a pagina Principal</a>
-                    </li>
-                </ul>
             </div>
         </div>
     </nav>
