@@ -2,6 +2,7 @@
 <html lang="pt-br">
 
 <head>
+  
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -56,7 +57,7 @@
       <th class="col">Equipe</th>
       <th class="col">Pontos</th>
       <th class="col">Abates</th>
-      <th class="col">Deletar</th>
+      <th class="col">Opções</th>
       </tr>
     </thead>
     <tbody>

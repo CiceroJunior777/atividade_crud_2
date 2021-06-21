@@ -1,8 +1,9 @@
 <?php
 
-$nome = $_POST['nome'];
+$id     = $_GET['id'];
 $pontos = $_POST['pontos'];
-$abates = $_POST['aabates'];
+$abates = $_POST['abates'];
+
 
 $servername = "localhost";
 $username = "root";
@@ -11,12 +12,11 @@ $dbname = "classificacao";
 
 try {
   $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-  
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-  $sql = "INSERT INTO equipes(equipes, pontos, abates)
-  VALUES ('$nome', '$pontos', '$abates')";
+  $sql = "UPDATE equipes SET pontos='$pontos', abates='$abates' WHERE id=$id";
+  $stmt = $conn->prepare($sql);
+  $stmt->execute();
 
-  $conn->exec($sql);
   header("location: visualizar.php");
 } catch(PDOException $e) {
   echo $sql . "<br>" . $e->getMessage();

@@ -1,9 +1,5 @@
 <?php
 
-//$servername = "sql111.epizy.com";
-//$username = "epiz_28780994";
-//$password = "iu5ffU7PrheTg";
-//$dbname = "epiz_28780994_bancoalunos";
 
 $servername = "localhost";
 $username = "root";
@@ -23,7 +19,8 @@ try {
     echo '<td>'.$v['equipes'].'</td>';
     echo '<td>'.$v['pontos'].'</td>';
     echo '<td>'.$v['abates'].'</td>';
-    echo '<td> <a href="excluir.php?id='.$v['id'].'"> <i class="bi bi-trash"></i> </a></td>';
+    echo '<td> <a href="excluir.php?id='.$v['id'].'"> <i class="bi bi-trash"></i></a>
+    <a href="atualizar_pontos.php?id='.$v['id'].'"><i class="bi bi-pencil-square"></i></a></td>';
     echo '</tr>';
   }
 } catch(PDOException $e) {
