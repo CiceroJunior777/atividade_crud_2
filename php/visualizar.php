@@ -36,7 +36,7 @@
       <tr><th class="bg-primary" scope="row">2</th></tr>
       <tr><th class="bg-primary" scope="row">3</th></tr>
       <tr><th class="bg-primary" scope="row">4</th></tr>
-      <tr><th class="bg-primary" scope="row">5</th></tr>
+      <tr><th scope="row">5</th></tr>
       <tr><th scope="row">6</th></tr>
       <tr><th scope="row">7</th></tr>
       <tr><th scope="row">8</th></tr>
