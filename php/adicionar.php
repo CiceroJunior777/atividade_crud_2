@@ -2,7 +2,7 @@
 
 $nome = $_POST['nome'];
 $pontos = $_POST['pontos'];
-$abates = $_POST['aabates'];
+$abates = $_POST['abates'];
 
 $servername = "sql203.epizy.com";
 $username = "epiz_28950928";
